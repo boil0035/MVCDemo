@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+}
+@{
+    Layout = null;
+ }
+@Model StudentModel ;
+<h2>Edit Student</h2>
+
+<form action="Student/Edit" method="post">
+    <p> First Name:<input  name="@Model.FirstName" id="@Model.FirstName" value="@Model.FirstName" />  </p>
+    <p> Last Name: <input  name="@Model.LastName" id="@Model.LastName" value="@Model.LastName"  />  </p>
+    <p> Major: <input  name="@Model.Major" id="@Model.Major" value="@Model.Major" />  </p>
+    <button type="submit">Submit</button>
+</form>
